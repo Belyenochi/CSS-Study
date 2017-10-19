@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function test() {
+		}
+		test.prototype.log = function(msg) {
+			console.log(msg);
+		}
+		var a = new test();
+		a.log('test');
+	</script>
+</body>
+</html>
