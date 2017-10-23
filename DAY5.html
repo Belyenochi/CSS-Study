@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*[id="color"] {
+		background-color: red;
+	}
+	* {
+		color: gray;
+	}
+	h1#page-title {
+		color: black;
+	}*/
+	/*#content div#main-content h2 {
+		color: gray;
+	}
+	body #content div[id="main-content"] h2 {
+		color: green;
+	}
+	.te {
+		margin: 20px;
+	}*/
+	/*.clear:after {
+		content: ".";
+		height: 0;
+		visibility: hidden;
+		display: block;
+		clear: both;
+	}
+	a:link, a:visited {text-decoration: none;}
+	a:hover, a:focus, a:active {text-decoration: underline;}
+	#comment:target {
+		background-color: yellow;
+	}*/
+	a.tooltip {
+		position: relative;
+	}
+
+	a.tooltip span {
+		display: none;
+	}
+	a.tooltip:hover span, a.tooltip:focus span {
+		display: block;
+		position: absolute;
+		top: 1em;
+		left: 2em;
+		padding: 0.2em 0.6em;
+		border: 1px solid #996633;
+		background-color: #FFFF66;
+		color: #000;
+	}
+	ul.nav {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		width: 5em;
+		background-color: #8BD400;
+		border: 1px solid #486B02;
+	}
+	ul.nav a {
+		display: block;
+		color: #2B3F00;
+		text-decoration: none;
+		border-top: 1px solid #E4FFD3;
+		border-bottom: 1px solid #486B02;
+		padding: 0.3em 1em;
+	}
+	</style>
+</head>
+<body>
+	<!-- <p id="color">test</p>
+	<h1 id="page-title">test2 <em>test3</em></h1> -->
+	<!-- <div id="content">
+		<div id="main-content">
+			<h2>Strange Times</h2>
+			<p>Here</p>
+			<div class="new-story">
+				<h2 class="first">Bog</h2>
+				<p><span class="te">test</span><span class="te">test</span></p>
+			</div>
+		</div>
+	</div> -->
+	<div class="clear">
+		<p>test</p>
+		<p>test2</p>
+	</div>
+	<a href="#comment">test</a>
+	<p id="comment">
+		comment
+	</p>
+
+	<p>
+		<a href="#" class="tooltip">Andy Budd <span>(This website rocks)</span> is a web developer based in
+			Brighton England.
+		</a>
+	</p>
+	<ul class="nav">
+		<li>
+			<a href="#">Home</a>
+			<a href="#">about</a>
+			<a href="#">services</a>
+			<a href="#">Our Work</a>
+			<a href="#">News</a>
+			<a href="#">contact</a>
+		</li>
+	</ul>
+
+	<ol class="pagination">
+		<li><a href="#" rel="prev">Prev</a></li>
+		<li><a href="#">1</a></li>
+		<li class="selected">2</li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ol>
+</body>
+</html>
