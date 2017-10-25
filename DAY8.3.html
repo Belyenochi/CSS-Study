@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		[id=section1] {
+			background: yellow;
+		}
+		[id*=section1] {
+			background: yellow;
+		}
+		[id^=section] {
+			background: yellow;
+		}
+		[id$=\-1] {
+			background-color: yellow;
+		}
+		p:first-line {
+			color: #0000FF;
+		}
+		p:first-letter {
+			color: #00FFFF;
+		}
+		div:nth-child(3n) {
+			color: #00FFFF;
+		}
+	</style>
+</head>
+<body>
+	<div id="section1">示例文本1</div>
+	<div id="subsection1-1">示例文本2</div>
+	<div id="subsection1-2">示例文本3</div>
+	<div id="section2">示例文本4</div>
+	<div id="subsection2-1">示例文本5</div>
+	<div id="subsection2-2">示例文本6</div>
+	<p>This is an English text</p>
+	<li><div></div></li>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	input[type="text"]:read-only {
+		background-color: gray;
+	}
+	input[type="text"]:read-write {
+		background-color: greenyellow;
+	}
+	input[type="text"]:-moz-read-only {
+		background-color: gray;
+	}
+	input[type="text"]:-moz-read-write {
+		background-color: greenyellow;
+	}
+	input[type="checkbox"]:checked {
+		outline: 2px solid blue;
+	}
+	input[type="radio"]:indeterminate {
+		outline: 2px solid gray;
+	}
+	p::selection {
+		background: red;
+		color: #FFF;
+	}
+	input[type="text"]:invalid {
+		background-color: red;
+	}
+	input[type="text"]:valid {
+		background-color: white;
+	}
+	p~p{
+		background-color: greenyellow;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<p>姓名: <input type="text" name="name" required></p>
+		<p>地址: <input type="text" name="address" value="江苏省常州市" readonly="readonly"></p>
+		<input type="checkbox" name="interest" value="basketball">
+		<input type="radio" name="sex" value="male">
+		<input type="radio" name="sex" value="female">
+	</form>
+</body>
+</html>
